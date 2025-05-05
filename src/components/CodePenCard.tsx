@@ -63,20 +63,30 @@ const CodepenCard = ({ title, codepenUrl, img, tags }: CodepenCardType) => {
       </div>
 
       {open && (
-        <div className="fixed h-dvh inset-0 bg-black/40 backdrop-blur-xs z-50 flex flex-col items-center justify-center">
+        <div className="fixed h-dvh inset-0 bg-black/80 backdrop-blur-xs z-50 flex flex-col items-center justify-center pt-16 md:pt-0">
           <div
             ref={modalRef}
-            className="relative w-full max-w-6xl   lg:min-h-[600px]"
+            className="relative w-full max-w-6xl lg:min-h-[600px]"
           >
             <div className="  h-fit bg-white rounded-xl  shadow-xl">
               <div className="absolute -top-16 right-2 flex items-center  gap-6">
-                <span className="text-white flex items-center my-6">
-                  Press{" "}
-                  <pre className="h-fit mx-3 px-3 p-0.5 bg-white/30 rounded ">
-                    esc
-                  </pre>
-                  to cancel
-                </span>
+                {breakpoint < 640 ? (
+                  <span className="text-white flex items-center my-6">
+                    tap
+                    <pre className="h-fit mx-3 px-3 p-0.5 bg-white/30 rounded ">
+                      outside
+                    </pre>
+                    to cancel
+                  </span>
+                ) : (
+                  <span className="text-white flex items-center my-6">
+                    Press
+                    <pre className="h-fit mx-3 px-3 p-0.5 bg-white/30 rounded ">
+                      esc
+                    </pre>
+                    to cancel
+                  </span>
+                )}
                 <button
                   onClick={() => setOpen(false)}
                   className="h-fit  bg-white/80 text-slate-800 px-3 py-1 rounded hover:bg-white cursor-pointer  "
@@ -91,7 +101,7 @@ const CodepenCard = ({ title, codepenUrl, img, tags }: CodepenCardType) => {
               )}
 
               <iframe
-                className="w-full min-h-[600px]"
+                className="w-full min-h-[300px]  lg:min-h-[600px]"
                 scrolling="no"
                 title="keyboard-effect"
                 // src="https://codepen.io/Someone-coding-03/embed/dPPeZoj?default-tab=result&editable=true"
