@@ -1,4 +1,6 @@
 import { useEffect, useRef, useState } from "react";
+import { useBreakpoint } from "../hooks/useBreakpoint";
+import { AiOutlineStop } from "react-icons/ai";
 
 interface CodepenCardType {
   title: string;
@@ -8,6 +10,12 @@ interface CodepenCardType {
 }
 
 const CodepenCard = ({ title, codepenUrl, img, tags }: CodepenCardType) => {
+  const parts = codepenUrl.split("/");
+  const id = parts[parts.length - 1];
+
+  const breakpoint = useBreakpoint();
+
+  img = img + "?default-tab=result&editable=true";
   const [open, setOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -82,7 +90,8 @@ const CodepenCard = ({ title, codepenUrl, img, tags }: CodepenCardType) => {
               className="w-full min-h-[600px]"
               scrolling="no"
               title="keyboard-effect"
-              src="https://codepen.io/Someone-coding-03/embed/dPPeZoj?default-tab=result&editable=true"
+              // src="https://codepen.io/Someone-coding-03/embed/dPPeZoj?default-tab=result&editable=true"
+              src={`https://codepen.io/Someone-coding-03/embed/${id}?default-tab=result&editable=true`}
               frameBorder="no"
               loading="lazy"
               onLoad={() => {
@@ -107,6 +116,15 @@ const CodepenCard = ({ title, codepenUrl, img, tags }: CodepenCardType) => {
               see code. You can also edit the code.
             </div>
           </div>
+          {breakpoint < 640 && (
+            <div className="mt-3 flex items-center gap-2 p-3 bg-yellow-100 border border-yellow-300 text-yellow-800 rounded-md text-sm">
+              <AiOutlineStop className="text-5xl" />
+              <span>
+                Many pens are <strong>optimized for desktop</strong> viewing
+                only. For the best experience, please use a larger screen.
+              </span>
+            </div>
+          )}
         </div>
       )}
     </>

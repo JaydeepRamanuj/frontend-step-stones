@@ -19,7 +19,7 @@ export default function CodepenGallery() {
       <div className="w-full lg:w-[90%] mx-auto pt-10">
         <h1 className="mx-3 sm:mx-6 md:ml-20  mb-4 md:mb-6 flex justify-between items-center">
           <span className="text-2xl text-white font-bold">Mini Projects</span>
-          <a href="https://codepen.io/jd-coding-03">
+          <a href="https://codepen.io/jd-coding-03" target="_black">
             <div className="flex items-center gap-2 bg-white/10 py-1 pl-2 pr-1 rounded-full">
               <span className="text-white font-semibold">More</span>
               <span className="size-8 rounded-full flex justify-center items-center bg-white/60">
@@ -65,6 +65,7 @@ export default function CodepenGallery() {
           Made with ♥️ for Web Development by
           <a
             href="https://github.com/JaydeepRamanuj"
+            target="_black"
             className="underline text-blue-400 ml-2"
           >
             Jaydeep Ramanuj
