@@ -63,7 +63,7 @@ const CodepenCard = ({ title, codepenUrl, img, tags }: CodepenCardType) => {
       </div>
 
       {open && (
-        <div className="fixed h-screen inset-0 bg-black/40 backdrop-blur-xs z-50 flex flex-col items-center justify-center">
+        <div className="fixed h-dvh inset-0 bg-black/40 backdrop-blur-xs z-50 flex flex-col items-center justify-center">
           <div
             ref={modalRef}
             className="relative w-full max-w-6xl   lg:min-h-[600px]"
