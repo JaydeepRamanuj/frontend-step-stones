@@ -1,8 +1,8 @@
-# 🧪 25+ Mini Frontend Projects – JD's Learning Lab
+# 🧪 25 Mini Frontend Projects – Frontend step stones
 
 > **A curated collection of mini-projects built using HTML, CSS, Vanilla JavaScript, and TailwindCSS.**
 
-Welcome to my frontend playground! This project is a personal archive of 25+ mini-projects I built during my learning journey as a frontend developer. Each project helped me understand concepts like layout, interactivity, animations, and component design.
+Welcome to my frontend playground! This project is a personal archive of 25 mini-projects I built during my learning journey as a frontend developer. Each project helped me understand concepts like layout, interactivity, animations, and component design.
 
 These mini-projects may not be perfect — some are raw, others more refined — but each represents a milestone in my web development journey.
 
@@ -10,9 +10,9 @@ These mini-projects may not be perfect — some are raw, others more refined —
 
 ## 🧭 Features
 
-- 📚 **25+ Mini Projects** across 5 categories
+- 📚 **25 Mini Projects** across 5 categories
 - 💡 Built with **HTML**, **CSS**, **Vanilla JavaScript**, and **TailwindCSS**
-- 🛠️ Edit-friendly CodePen embeds (View → Edit → Fork!)
+- 🛠️ Edit-friendly CodePen embeds (View output → view code → Edit)
 - 🔍 Categorized for easy browsing
 - 🌱 Reflects real progress and practice — with a few imperfections included intentionally to show growth
 
@@ -51,7 +51,7 @@ You can view and interact with all projects directly through CodePen:
 1. Visit the [main dashboard](https://www.linkedin.com/in/jaydeep-ramanuj/)
 2. Click on any project tile
 3. View the **CodePen Embed**
-4. Click **Edit** or **Fork** to play around with the code!
+4. Click **Edit** to play around with the code!
 
 ---
 
@@ -91,7 +91,7 @@ This is not a polished component library or design system. It’s a reflection o
 
 I’m **JD** – a passionate frontend developer on a mission to build and grow. This repo is part of my commitment to learn by doing and sharing my progress openly. If you’d like to follow my journey or collaborate:
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/jaydeep-ramanuj/)
-- 📬 Email: [jaydeepramanuj.jd@gmail.com]
+- 💼 [LinkedIn @Jaydeep Ramanuj](https://www.linkedin.com/in/jaydeep-ramanuj/)
+- 📬 Email: <jaydeepramanuj.jd@gmail.com>
 
 ---
