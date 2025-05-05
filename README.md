@@ -48,7 +48,7 @@ _👉 See full list in the project UI or inside `pens.js` file._
 
 You can view and interact with all projects directly through CodePen:
 
-1. Visit the [main dashboard](https://www.linkedin.com/in/jaydeep-ramanuj/)
+1. Visit the [main dashboard](https://frontend-step-stones.vercel.app/)
 2. Click on any project tile
 3. View the **CodePen Embed**
 4. Click **Edit** to play around with the code!
